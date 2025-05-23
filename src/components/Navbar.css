@@ -1,0 +1,142 @@
+/* Navbar.css */
+
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  padding: 0.3rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand-custom {
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+/* Nav Links Styling */
+.nav-links-container {
+  gap: 1rem;
+}
+
+.nav-link-custom {
+  color: #333 !important;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-link-custom:hover {
+  color: #1c8519 !important;
+  background-color: rgba(0, 86, 179, 0.05);
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1f8a24;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.contact-link {
+  background-color: #0056b3;
+  color: white !important;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.contact-link:hover {
+  background-color: #003d82 !important;
+  color: white !important;
+}
+
+.contact-link::after {
+  display: none;
+}
+
+/* Mobile Menu Styling */
+.navbar-toggler-custom {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-custom:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon-custom {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 86, 179, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-logo {
+    height: 40px;
+  }
+  
+  .nav-links-container {
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+  
+  .nav-link-custom {
+    padding: 0.5rem !important;
+  }
+  
+  .contact-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: fit-content;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .nav-logo {
+    height: 40px;
+  }
+  
+  .school-name {
+    font-size: 1rem;
+  }
+  
+  .school-tagline {
+    font-size: 0.7rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .login-button {
+    margin: 0.5rem 0 0 0 !important;
+    display: inline-block;
+    width: auto;
+  }
+  
+  .nav-links {
+    padding: 1rem 0;
+  }
+}

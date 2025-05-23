@@ -1,0 +1,113 @@
+/* AboutUs.css */
+
+/* Main Container */
+.about-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Elements */
+.about-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0e7920, #1b7513);
+}
+
+/* Typography */
+.about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #198616;
+    border-radius: 2px;
+}
+
+.about-content {
+    font-family: 'Open Sans', sans-serif;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Mission/Vision Styling */
+.about-highlight {
+    background-color: #f8f9fa;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #1a8d16;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.about-highlight:hover {
+    transform: translateX(5px);
+    box-shadow: 3px 0 15px rgba(243, 156, 18, 0.2);
+}
+
+.about-highlight strong {
+    color: #2c3e50;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.about-highlight strong::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #26861a;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* History Section */
+.about-history {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px dashed #e0e0e0;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .about-highlight {
+        padding: 1.3rem;
+    }
+}

@@ -1,0 +1,108 @@
+/* Home.css */
+
+/* Base Styles */
+.home-container {
+  max-width: 1200px;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Banner */
+.college-hero-banner {
+  background: linear-gradient(135deg, #115f1c 0%, #115f1c 100%);
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  margin: 2rem 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 86, 179, 0.2);
+}
+
+.college-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+}
+
+.college-hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography */
+.college-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.college-motto {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.college-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+/* Button */
+.explore-button {
+  background-color: #ffcc00;
+  color: #003366;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explore-button:hover {
+  background-color: #ffd633;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .college-hero-banner {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .college-title {
+    font-size: 2.2rem;
+  }
+  
+  .college-motto {
+    font-size: 1.3rem;
+  }
+  
+  .college-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .college-hero-banner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .college-title {
+    font-size: 1.8rem;
+  }
+}
